@@ -26,6 +26,10 @@ function injectRoutes(params: any, resolve: (path: string) => string) {
     const routes = [
         { pattern: "/api/kinde/login", entrypoint: "./api/login.js" },
         { pattern: "/api/kinde/register", entrypoint: "./api/register.js" },
+        {
+            pattern: "/api/kinde/knock-knock",
+            entrypoint: "./api/knock-knock.js",
+        },
         { pattern: "/api/kinde/callback", entrypoint: "./api/callback.js" },
         { pattern: "/api/kinde/signout", entrypoint: "./api/signout.js" },
         {
